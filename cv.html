@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+	<head>
+		<title>CV Cheminat</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="index.css">
+		<link rel="icon" href="Photo_de_profil.jpg" type="image/x-icon">
+        <script type="text/javascript" src="date_heure.js"></script>
+	</head>
+			<select id="choix" onchange="selection()">
+				<option value='fr'>Français</option>
+				<option value='an'>Anglais</option>
+			</select>
+	
+	<script>
+	function selection(){
+		const selecteur = document.getElementById("choix");
+		const monChoix = selecteur[selecteur.selectedIndex]
+		if (monChoix.value == "fr"){
+		document.getElementById("co").innerHTML = "Coordonnés";
+		document.getElementById("tel").innerHTML = "Téléphone";
+		document.getElementById("mail").innerHTML = "E-mail";
+		document.getElementById("adresse").innerHTML ="Adresse";
+		document.getElementById("presentation2").innerHTML = "Présentation";
+		document.getElementById("presentation3").innerHTML = "Je me nomme Jules Cheminat et je suis lycéen au lycée Blaise Pascal de Clermont-Fd. en classe de Première générale. Je suis né à Grenoble le 12 janvier 2004 et ai donc actuellemnt 16 ans. Je suis passionné de photographie et de technologie.";
+		document.getElementById("competence2").innerHTML = "Compétence";
+		document.getElementById("competence3").innerHTML = "Travail en équipe";
+		document.getElementById("competence4").innerHTML = "Maitrise les logiciels de montages photos et vidéos";
+		document.getElementById("competence5").innerHTML = "Niveau B2 en Anglais";
+		document.getElementById("competence6").innerHTML = "Niveau A2 en Espagnol";
+		document.getElementById("diplome").innerHTML = "Dîplomes";
+		document.getElementById("diplome2").innerHTML = "Brevet des collèges 2019 (mension bien)";
+		document.getElementById("diplome3").innerHTML = "Code de la route 2019";
+		document.getElementById("diplome4").innerHTML = "ASSR1 2016";
+		document.getElementById("diplome5").innerHTML = "ASSR2 2019";
+		document.getElementById("expro").innerHTML = "Expérience professionnelles";
+		document.getElementById("expro2").innerHTML = "Stage d'observation en milieu professionnel de 3ème à";
+		document.getElementById("etude").innerHTML = "Etudes";
+		document.getElementById("etude2").innerHTML = "Très petite section au";
+		document.getElementById("etude3").innerHTML = "Ecole maternelle à";
+		document.getElementById("etude4").innerHTML = "Ecole elémentaire à";
+		document.getElementById("etude5").innerHTML = "Collège au";
+		document.getElementById("etude6").innerHTML = "Lycée";
+		}
+		if (monChoix.value == 'an'){
+			document.getElementById("co").innerHTML = "Contact information";
+			document.getElementById("tel").innerHTML = "Phone";
+			document.getElementById("mail").innerHTML = "E-mail";
+			document.getElementById("adresse").innerHTML = "Address";
+			document.getElementById("presentation2").innerHTML = "Presentation";
+			document.getElementById("presentation3").innerHTML = "My name is Jules Cheminat and I am a high school student at the Blaise Pascal high school in Clermont-Fd. in Première générale class. I was born in Grenoble on January 12, 2004 and am currently 16 years old. I am passionate about photography and technology.";
+			document.getElementById("competence2").innerHTML = "Competence";
+			document.getElementById("competence3").innerHTML = "Teamwork";
+			document.getElementById("competence4").innerHTML = "Master photo and video editing softwares";
+			document.getElementById("competence5").innerHTML = "Level B2 in English";
+			document.getElementById("competence6").innerHTML = "Niveau A2 en Espagnol";
+			document.getElementById("diplome").innerHTML = "Titles";
+			document.getElementById("diplome2").innerHTML = "College certificate 2019 (mension bien)";
+			document.getElementById("diplome3").innerHTML = "Highway Traffic Act 2019";
+			document.getElementById("diplome4").innerHTML = "ASSR1 2016";
+			document.getElementById("diplome5").innerHTML = "ASSR2 2019";
+			document.getElementById("expro").innerHTML = "Professional Experience";
+			document.getElementById("expro2").innerHTML = "Internship of observation in a professional environment from 3ème to";
+			document.getElementById("etude").innerHTML = "Studies";
+			document.getElementById("etude2").innerHTML = "Very small section at";
+			document.getElementById("etude3").innerHTML = "Nursery school in";
+			document.getElementById("etude4").innerHTML = "Elementary school in";
+			document.getElementById("etude5").innerHTML = "College at";
+			document.getElementById("etude6").innerHTML = "High School";
+		}
+	}
+	</script>
+<body>
+	<div id="haut">
+		<header><h1>Cheminat Jules</h1></header>
+		<nav>
+				<ul>
+					<h2 id="co">Coordonnés</h2>
+					<h3 id="tel">Téléphone :</h3> <h4>0651352174</h4>
+					<h3 id="mail">E-mail :</h3> <h4>jules.sid@gmail.com</h4>
+					<h3 id="adresse">Adresse :</h3> <h4>34 allée du beau site 63110 Beaumont</h4>
+				</ul>
+		</nav>
+	</div>
+		<div id="photodeprofil">
+			<img src="img/Photo_de_profil.jpg" alt="photo_de_profil" width="200" height="200">
+		</div>
+			<div id="presentation">
+				<h2 id="presentation2">Présentation</h2>
+					<h4 id="presentation3">Je me nomme Jules Cheminat et je suis lycéen au lycée Blaise Pascal de Clermont-Fd. en classe de Première générale. Je suis né à Grenoble le 12 janvier 2004 et ai donc actuellemnt 16 ans. Je suis passionné de photographie et de technologie.</h4>
+			</div>
+				<div id="competence">
+					<h2 id="competence2">Compétence</h2>
+						<h4 id="competence3">Travail en équipe</h4>
+						<h4 id="competence4">Maitrise les logiciels de montages photos et vidéos</h4>
+						<h4 id="competence5">Niveau B2 en Anglais</h4>
+						<h4 id="competence6">Niveau A2 en Espagnol</h4>
+				</div>
+					<div id="diplomes">
+						<h2 id="diplome">Dîplomes</h2>
+							<h4 id="diplome2">Brevet des collèges 2019 (mension bien)</h4>
+							<h4 id="diplome3">Code de la route 2019</h4>
+							<h4 id="diplome4">ASSR1 2016</h4>
+							<h4 id="diplome5">ASSR2 2019</h4>
+					</div>
+						<div id="expros">
+							<h2 id="expro">Expérience professionnelles</h2>
+								<h4 id="expro2">Stage d'observation en milieu professionnel de 3ème à <a href="https://www.materiel-velo.com/#ancre">Materiel vélo.com</a></h4>
+						</div>
+							<div id="etudes">
+								<h2 id="etude">Etudes</h2>
+									<h4 id="etude2">Très petite section au <a href="https://www.st-joseph-aubiere.fr/#ancre">Groupe Scolaire St Joseph</a></h4>
+									<h4 id="etude3">Ecole maternelle à <a href="https://www.beaumont63.fr/ecole-maternelle-jean-zay#ancre">Jean Zay</a></h4>
+									<h4 id="etude4">Ecole elémentaire à <a href="https://www.beaumont63.fr/ecole-elementaire-jean-zay#ancre">Jean Zay</a></h4>
+									<h4 id="etude5">Collège au <a href="https://moliere-beaumont.ent.auvergnerhonealpes.fr/#ancre">Collège Mollière</a></h4>
+									<h4 id="etude6">Lycée <a href="https://lyc-blaise-pascal-clermont.ent.auvergnerhonealpes.fr/#ancre">Blaise Pascal</a></h4>
+									
+								
+	
